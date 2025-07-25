@@ -42,8 +42,4 @@ export class NewsComponent {
       date: '2025-07-23'
     }
   ];
-
-  trackByTitle(index: number, card: { title: string }): string {
-    return card.title;
-  }
 }
