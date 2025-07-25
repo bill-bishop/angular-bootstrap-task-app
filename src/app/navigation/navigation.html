@@ -1,0 +1,28 @@
+<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+  <li [ngbNavItem]="1">
+    <a ngbNavLink routerLink="/">Home</a>
+    <div *ngbNavContent>
+      <h2>Home</h2>
+    </div>
+  </li>
+  <li [ngbNavItem]="2">
+    <a ngbNavLink routerLink="/news">News</a>
+    <div *ngbNavContent>
+      <h2>News</h2>
+    </div>
+  </li>
+  <li [ngbNavItem]="3">
+    <a ngbNavLink routerLink="/tasks">Tasks</a>
+    <div *ngbNavContent>
+      <h2>Tasks</h2>
+    </div>
+  </li>
+  <li [ngbNavItem]="4">
+    <a ngbNavLink routerLink="/tools">Tools</a>
+    <div *ngbNavContent>
+      <h2>Tools</h2>
+    </div>
+  </li>
+</ul>
+
+<div [ngbNavOutlet]="nav" class="mt-2 ps-5 pt-3"></div>
